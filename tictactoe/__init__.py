@@ -10,13 +10,13 @@ EMPTY = None
 
 @check50.check()
 def exists():
-    """degrees.py exists"""
+    """tictactoe.py exists"""
     check50.exists("tictactoe.py")
 
 
 @check50.check(exists)
 def imports():
-    """degrees.py imports"""
+    """tictactoe.py imports"""
     sys.path = [""] + sys.path
     check50.py.import_("tictactoe.py")
 
